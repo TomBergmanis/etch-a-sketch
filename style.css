@@ -1,13 +1,27 @@
-#grid {
+body {
   display: flex;
-  background-color: red;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  width: 100px;
-  height: 100px;
+  justify-content: center;
+  padding: 100px;
+}
+.grid {
+  display: flex;
+  background-color: lightgrey;
+  width: 500px;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 .cell {
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid black;
+  display: flex;
+  width: 27px;
+  height: 27px;
+  margin: 0;
+}
+
+.cell:hover {
+  background-color: black;
 }

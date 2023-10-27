@@ -10,8 +10,8 @@ function createGrid(size) {
     for (let j = 0; j < size; j++) {
       const cell = document.createElement("div");
       cell.classList.add("cell");
-      cell.style.width = 35 / size + "rem";
-      cell.style.height = 35 / size + "rem";
+      cell.style.width = 45 / size + "rem";
+      cell.style.height = 45 / size + "rem";
       grid.appendChild(cell);
     }
   }
@@ -29,7 +29,6 @@ document.querySelector(".apply").addEventListener("click", getSize);
 function getSize() {
   console.log("button clicked");
   let size = prompt("Choose your grid size, the max is 30", "0");
-
   console.log(size);
   while (grid.firstChild) {
     grid.removeChild(grid.lastChild);
